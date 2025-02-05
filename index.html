@@ -16,6 +16,10 @@
             padding: 20px;
             text-align: center;
         }
+        header img {
+            width: 100px; /* Set logo size */
+            margin-bottom: 20px;
+        }
         .container {
             padding: 30px;
             max-width: 900px;
@@ -37,11 +41,13 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
         }
         .button:hover {
             background-color: #1abc9c; /* Highlight color for hover */
         }
-        h2 {
+        h2, h3 {
             color: #2c3e50; /* Dark navy for headings */
         }
         a {
@@ -57,40 +63,71 @@
         .subject-list li {
             padding: 5px 0;
         }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 80%; /* Adjust image width as needed */
+            max-width: 600px; /* Limit max image width */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            margin-top: 30px;
+        }
+        .contact-info p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Sunny Education Logo"> <!-- Logo Image -->
         <h1>Sunny Education</h1>
-        <p>AI-Enhanced Tuition Services for Primary, Secondary, and IGCSE Students</p>
+        <p>Your Trusted Tuition Center with Over 20 Years of Experience</p>
     </header>
 
     <div class="container">
         <h2>About Sunny Education</h2>
-        <p>At Sunny Education, we combine over <strong>20 years of experience</strong> with the power of cutting-edge AI technology to provide personalized tutoring. We offer specialized programs for Primary, Secondary, and IGCSE students, designed to cater to their unique learning needs. Our expert tutors work closely with students, using AI tools to monitor progress, identify learning gaps, and provide instant feedback, ensuring that each student receives the highest quality education.</p>
+        <p>At Sunny Education, we provide top-quality tutoring services for Primary, Secondary, and IGCSE students. With over <strong>20 years of experience</strong> and a team of qualified tutors, we are committed to helping students excel academically.</p>
         
-        <h3>How AI Enhances Learning</h3>
-        <p>We leverage artificial intelligence to:</p>
-        <ul>
-            <li><strong>Customize Learning Plans:</strong> AI helps create personalized study paths for students, adapting to their learning speed and areas that need improvement.</li>
-            <li><strong>Track Progress:</strong> Real-time feedback through AI tools helps students and tutors track progress, adjust methods, and set achievable goals.</li>
-            <li><strong>Instant Support:</strong> With AI-powered learning platforms, students can access immediate help on topics they’re struggling with, even outside tutoring hours.</li>
-            <li><strong>Optimize Performance:</strong> Our AI technology analyzes test results and learning behaviors to suggest the most effective strategies for improvement.</li>
-        </ul>
-
         <h3>Subjects We Offer</h3>
         <ul class="subject-list">
-            <li><strong>Mathematics</strong> - From basic arithmetic to advanced calculus, we make math easy to understand.</li>
-            <li><strong>Science</strong> - Physics, Chemistry, Biology – all subjects covered with an engaging, hands-on approach.</li>
-            <li><strong>Accounting</strong> - Learn the foundations of accounting principles with real-life applications.</li>
-            <li><strong>English</strong> - Improve writing, reading, and speaking skills tailored to your level.</li>
-            <li><strong>Malay</strong> - Master both conversational and written Malay through interactive lessons.</li>
+            <li><strong>Mathematics</strong></li>
+            <li><strong>Science</strong></li>
+            <li><strong>Accounting</strong></li>
+            <li><strong>English</strong></li>
+            <li><strong>Malay</strong></li>
         </ul>
 
         <h3>Our Services</h3>
-        <p>We offer a variety of flexible tutoring options to match every student’s learning style and schedule:</p>
+        <p>We offer a variety of flexible tutoring options, including:</p>
         <ul>
-            <li><strong>1-on-1 Personalized Sessions:</strong> Tailored lessons designed to meet your individual needs and pace.</li>
-            <li><strong>Small Group Sessions:</strong> Collaborative learning with like-minded peers to foster teamwork and problem-solving skills.</li>
-            <li><strong>Online Lessons:</strong> Convenient and flexible online tutoring, available anywhere, anytime.</li>
-            <li><strong>In-person Lessons:</strong> Engage in interactive, face-to-face learning at our cen
+            <li>1-on-1 personalized sessions</li>
+            <li>Small group sessions</li>
+            <li>Online lessons</li>
+            <li>In-person lessons (at our center or your location)</li>
+        </ul>
+
+        <div class="image-container">
+            <img src="tuition-center.jpg" alt="Sunny Education Tuition Center"> <!-- Tuition Center Image -->
+        </div>
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>If you're interested in our services, please don't hesitate to reach out:</p>
+            <p><strong>Phone/WhatsApp:</strong> <a href="tel:+60195739033">+60 195 739 033</a></p>
+            <p><strong>Location:</strong> Island Glades, Greenlane</p>
+            <p>For more details or inquiries, feel free to contact us or visit our center during business hours.</p>
+            <a href="mailto:your-email@example.com" class="button">Email Us</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sunny Education. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
